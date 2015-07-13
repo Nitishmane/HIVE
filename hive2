@@ -1,0 +1,3 @@
+use nitish;
+select stationid, maxtemp from weather
+	WHERE ( weather.latitude > 35 );

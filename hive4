@@ -1,0 +1,4 @@
+use nitish;
+select stationid, max(mean), min(mean), max(mean)-min(mean), longitude, latitude  from ( 
+		 select stationid,avg(maxtemp) as mean,longitude,latitude from weather group by stationid,longitude, latitude ) 
+		 weather group by stationid,longitude, latitude ;

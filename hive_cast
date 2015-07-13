@@ -1,0 +1,2 @@
+use nitish;
+insert into weather select stationid,year,maxtemp, mintemp, dewpoint, precipitation, cast(latitude as INT), cast (longitude as INT) from weather2;
